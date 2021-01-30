@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body,body * {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .container {
     display: grid;
     place-items: center;
@@ -10,18 +16,41 @@
     position: relative;
 }
 
-.input-container svg {
+.input-container #i-svg {
     width: 24px;
     height: 24px;
     position: absolute;
     top: 50%;
     left: 1rem;
     transform: translateY(-50%);
+    fill: #717171;
+    transition: fill .4s;
+}
+
+label:focus-within #i-svg {
+    fill: #f5f8ff;
 }
 
 .input {
     min-width: 12rem;
     padding: 1rem 1.4rem 1rem 3.2rem;
+    border-radius: 0.4rem;
+    background: #2c2f33;
+    border: transparent;
+}
+
+.input:focus { 
+    outline: none;
+    color: #f5f8ff;
+}
+
+
+.input:focus > .input-container svg {
+    fill: white;
+}
+
+.input::placeholder {
+    color: #717171;
 }
 
 
