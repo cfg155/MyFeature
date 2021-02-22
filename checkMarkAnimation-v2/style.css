@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container svg {
+    width: 50%;
+}
+
+#circle {
+    /* stroke: red !important; */
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: animating 4s ease-out infinite;
+}
+
+#mark {
+    /* stroke: black !important; */
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: animating 4s ease-in infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animating {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
