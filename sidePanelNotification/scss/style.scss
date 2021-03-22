@@ -22,21 +22,21 @@
     box-sizing: border-box;
     overflow: hidden;
 
-    .msg-style{
-        display: grid;
-        place-items: center;
-        box-sizing: border-box;
-        padding: 10px;
-        margin: 10px 0;
-        background-color: aqua;
-        width: 70%;  
-        border-radius: 50px; 
-    }   
+    // .msg-style{
+    //     display: grid;
+    //     place-items: center;
+    //     box-sizing: border-box;
+    //     padding: 10px;
+    //     margin: 10px 0;
+    //     background-color: aqua;
+    //     width: 70%;  
+    //     border-radius: 50px; 
+    // }   
 }
 
-@keyframes fadeIn {
-    to {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
+// @keyframes fadeIn {
+//     to {
+//         transform: translateX(0px);
+//         opacity: 1;
+//     }
+// }

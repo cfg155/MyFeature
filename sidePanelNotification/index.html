@@ -19,15 +19,26 @@
 </html>
 
 <script>
-    document.getElementById('btn').addEventListener('click',()=>{
-        let count = 0
-        let msgItem = `<div class="notification-panel--msg-item-${count} msg-style">Notification Received</div>`
-        document.querySelector('.notification-panel').innerHTML += msgItem
+    let count = 0
+    async function generateMsg(count){
+        console.log(count);
+        count++
+        // let msgItem = `<div class="notification-panel--msg-item-${count} msg-style">Notification Received</div>`
+        // document.querySelector('.notification-panel').innerHTML += msgItem
+    }
 
-        let currMsg = document.querySelector(`.notification-panel--msg-item-${count}`)
-        currMsg.style.transform = 'translateX(200px)'
-        currMsg.style.opacity = 'opacity : 0'
-        currMsg.style.animation = 'fadeIn 2s'
-        currMsg.style.animationFillMode = 'forwards'
-    })
+    document.getElementById('btn').addEventListener('click',generateMsg.bind(count))
+
+
+    // document.getElementById('btn').addEventListener('click',()=>{
+    //     let count = 0
+    //     let msgItem = `<div class="notification-panel--msg-item-${count} msg-style">Notification Received</div>`
+    //     document.querySelector('.notification-panel').innerHTML += msgItem
+
+    //     let currMsg = document.querySelector(`.notification-panel--msg-item-${count}`)
+    //     currMsg.style.transform = 'translateX(200px)'
+    //     currMsg.style.opacity = 'opacity : 0'
+    //     currMsg.style.animation = 'fadeIn 2s'
+    //     currMsg.style.animationFillMode = 'forwards'
+    // })
 </script>

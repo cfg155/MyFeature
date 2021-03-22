@@ -19,17 +19,3 @@
   padding: 10px 0;
   box-sizing: border-box;
   overflow: hidden; }
-  .notification-panel .msg-style {
-    display: grid;
-    place-items: center;
-    box-sizing: border-box;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: aqua;
-    width: 70%;
-    border-radius: 50px; }
-
-@keyframes fadeIn {
-  to {
-    transform: translateX(0px);
-    opacity: 1; } }
